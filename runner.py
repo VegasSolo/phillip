@@ -158,11 +158,11 @@ add_param('stage', stage, False)
 add_param('char', char, True)
 
 enemies = None
-enemies = "cpu"
+#enemies = "cpu"
 #enemies = "easy"
 #enemies = "delay0"
 #enemies = "delay%d" % delay
-#enemies = ['self']
+enemies = ['self']
 #enemies = 'hard-self'
 add_param('enemies', enemies)
 

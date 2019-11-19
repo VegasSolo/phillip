@@ -121,9 +121,15 @@ if run_agents:
     common_command += " --dual_core 0"
   
   common_command += " --dolphin"
-  common_command += " --exe dolphin-emu-headless"
+  common_command += " --exe dolphin-emu-nogui"
+  # common_command += " --exe dolphin-emu"
   common_command += " --zmq 1 --pipe_count 1"
   common_command += " --random_swap"
+  # common_command += " --gui"  # with gui off, its about 240% speed
+  # common_command += " --cpu 9"
+  # common_command += " --speed 0"  # uncapped FPS? Dolphin has built in 200% speed but I can't find how to make it on by default (can only do it manually with dolphin-emu gui on)
+  # common_command += " --speed_scale 200"
+  common_command += " --iso /media/dillon/DATA/Projects/deep-learning-project/SSBM.iso"
   # common_command += " --help"
   
   enemy_commands = []

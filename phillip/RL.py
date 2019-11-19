@@ -153,7 +153,9 @@ class RL(Default):
     
     self.graph.finalize()
 
+    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.18)
     tf_config = dict(
+      gpu_options=gpu_options,
       allow_soft_placement=True,
       #log_device_placement=True,
     )
